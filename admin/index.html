@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SICEFA-Central</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Lunar Software">
+        <meta name="keywords" content="sicefa, central">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.utilities.min.css">
+        <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.grid.min.css">
+
+        <link rel="stylesheet" href="style/sweetalert2/sweetalert2.min.css">
+        
+        <link rel="stylesheet" href="../style/fontawesome-free-6.4.0-web/css/all.css"/>
+
+    </head>
+    <body>
+        <nav class="navbar bg-primary navbar-expand-sm sticky-top " data-bs-theme="dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item fw-bold">
+                        <a class="navbar-brand" onclick="cargarLogin();">SICEFA-Central</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" onclick="cargarModuloSucursal();">Sucursales</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" onclick="cargarModuloProductos();">Productos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" onclick="cargarModuloCompra();">Compras</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="divContenedorPrincipal" class="content-fluid">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="../media/img/slide0.jpg" class="d-block w-100" alt="..." height="500">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-dark">Farmacia Medicamos tu Vida</h2>
+                            <p class="text-dark">"En tu salud y bienestar, nuestra farmacia siempre est&aacute;, con remedios y cariño, sanamos cada d&iacute;a el camino."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../media/img/slide.jpg" class="d-block w-100" alt="..." height="500">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-dark">Farmacia Medicamos tu Vida</h2>
+                            <p class="text-dark">"En tu salud y bienestar, nuestra farmacia siempre est&aacute; con remedios y cariño, sanamos cada d&iacute;a el camino."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../media/img/slide1.jpg" class="d-block w-100" alt="..." height="500">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-dark">Farmacia Medicamos tu Vida</h2>
+                            <p class="text-dark">"En tu salud y bienestar, nuestra farmacia siempre est&aacute;, con remedios y cariño, sanamos cada d&iacute;a el camino."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../media/img/slide2.jpg" class="d-block w-100" alt="..." height="500">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-dark">Farmacia Medicamos tu Vida</h2>
+                            <p class="text-dark">"En tu salud y bienestar, nuestra farmacia siempre est&aacute;, con remedios y cariño, sanamos cada d&iacute;a el camino."</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="row mt-5 text-center">
+                    <div class="col-3">
+                        <div class="" style="width: 18rem;">
+                            <img src="../media/img/produc.jpg" class="card-img-top"  height="290" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">El donepezilo ayuda a controlar los s&iacute;ntomas de la enfermedad de Alzheimer</p>
+                                <a class="btn btn-primary text-center" onclick="cargarModuloProductos();" href="#">Mostrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="" style="width: 18rem;">
+                            <img src="../media/img/produc5.jpg" class="card-img-top" height="290" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">El etambutol es un antibi&oacute;tico elimina ciertas bacterias que provocan tuberculosis. </p>
+                                <a class="btn btn-primary" onclick="cargarModuloProductos();" href="#">Mostrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="" style="width: 18rem;">
+                            <img src="../media/img/produc3.jpg" class="card-img-top" height="290" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Se usa para aliviar temporalmente la tos causada por el resfriado com&uacute;n, la gripe u otras afecciones. </p>
+                                <a class="btn btn-primary" onclick="cargarModuloProductos();" href="#">Mostrar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="" style="width: 18rem;">
+                            <img src="../media/img/produc4.jpg" class="card-img-top" height="290" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">La lidoca&iacute;na viscosa, es un anest&eacute;sico local, usado para tratar el dolor de una garganta adolorida</p>
+                                <a class="btn btn-primary" onclick="cargarModuloProductos();" href="#">Mostrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../style/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../style/sweetalert2/sweetalert2.all.min.js"></script>
+        
+        <script src="../style/fontawesome-free-6.4.0-web/js/all.js"></script>
+        
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

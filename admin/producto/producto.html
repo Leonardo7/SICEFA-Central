@@ -1,0 +1,207 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>M&oacute;dulo de Control de Productos</h3>
+            </div>
+            <div class="card-body">
+                <div id="divDetalleProducto" class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Detalle de Producto</h4>
+                                <button class="float-end btn btn-outline-danger" onclick="cm.setDetalleProductoVisible(false);">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <div class="row">
+
+                                            <div class="row">
+                                                <div class="col-4" style="color: #FF6D00;">
+                                                    <span class="h5"> Datos del producto</span>
+                                                    <hr/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="txtIdProductos" type="text" class="form-control" placeholder="ID Productos"/>
+                                                        <label for="txtIdProductos">ID del producto:</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtNombre" type="text" class="form-control" placeholder="Nombre:"/>
+                                                    <label for="txtNombre">Nombre del producto:</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtNomGen" type="text" class="form-control" placeholder="Nombre generico:"/>
+                                                    <label for="txtNomGen">Nombre generico:</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtForFar" type="text" class="form-control" placeholder="Forma farmac&eacute;utica::"/>
+                                                    <label for="txtForFar">Forma farmac&eacute;utica:</label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-3">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtUniMe" type="text" class="form-control" placeholder="Unidad de medida:"/>
+                                                    <label for="txtUniMe">Unidad de medida:</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtPresentacion" type="text" class="form-control" placeholder="Presentaci&oacute;n:"/>
+                                                    <label for="txtPresentacion">Presentaci&oacute;n:</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtPrincIn" type="text" class="form-control" placeholder="Principal Indicaci&oacute;n:"/>
+                                                    <label for="txtPrincIn">Principal Indicaci&oacute;n:</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-floating mb-3">
+                                                    <input id="txtContraindicaciones" type="text" class="form-control" placeholder="Contraindicaciones:"/>
+                                                    <label for="txtContraindicaciones">Contraindicaciones:</label>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="txtConcentracion" type="text" class="form-control" placeholder="Concentraci&oacute;n:"/>
+                                                        <label for="txtConcentracion">Concentraci&oacute;n:</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="txtUnidadEnv" type="text" class="form-control" placeholder="Unidades de envase:"/>
+                                                        <label for="txtUnidadEnv">Unidades de envase:</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="numPrecio" type="number" class="form-control" placeholder="Precio compra:"/>
+                                                        <label for="numPrecio">Precio compra:</label>
+
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="numPrecioVent" type="number" class="form-control" placeholder="Precio venta:"/>
+                                                        <label for="numPrecio">Precio Venta</label>
+
+                                                    </div>
+                                                </div> 
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="foto" type="file" class="form-control" placeholder="Selecciona foto del producto:"/>
+                                                        <label for="myfile">Selecciona foto del producto:</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-floating mb-3">
+                                                        <input id="txtRuta" type="txtRuta" class="form-control" placeholder="Ruta de la foto:"/>
+                                                        <label for="txtRuta">Ruta de la foto:</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-6">
+                                                        <div class="form-floating mb-3">
+                                                            <input id="txtCodBarras" type="txtCB" class="form-control" placeholder="C&oacute;digo de barras:"/>
+                                                            <label for="txtCB">C&oacute;digo de barras:</label>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-floating mb-3">
+                                                            <input id="numEstatus" type="number" class="form-control" placeholder="Estatus:"/>
+                                                            <label for="numEstatus">Estatus:</label>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col-12">
+                                                            <div class="text-center">
+                                                                <button class="btn btn-primary me-2" onclick="cm.saveProducto();">
+                                                                    <i class="fa fa-floppy-disk"></i>
+                                                                    Guardar
+                                                                </button>
+                                                                <button class="btn btn-danger ms-2 me-2" onclick="cm.deleteProducto();">
+                                                                    <i class="fa fa-trash-can"></i>
+                                                                    Eliminar
+                                                                </button>
+                                                                <button class="btn btn-success ms-2" onclick="cm.clearForm();">
+                                                                    <i class="fa fa-plus"></i>
+                                                                    Nuevo
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="divCatalogoProductos" class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <span>Cat&aacute;logo de Productos</span>
+                                <buton class="ms-3 btn btn-outline-success" onclick="cm.clearAndShowDetalleProduto();">
+                                    <i class="fa fa-plus"></i>
+                                    Nuevo
+                                </buton>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre del producto:</th>
+                                            <th>Presentaci&oacute;n:</th>
+                                            <th>Principal Indicaci&oacute;n:</th>
+                                            <th>Contraindicaciones:</th>
+                                            <th>Concentraci&oacute;n:</th>
+                                            <th>Unidades de envase:</th>
+                                            <th>Precio venta:</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyProductos">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SICEFA_Central</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lunar Software">
+        <meta name="keybords" content="sicefa, central, compras, productos, sucursales">
+        <link rel="stylesheet" href="style/style.css"/>
+
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap-utilities.min.css"/>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap-grid.min.css"/>
+
+        <link rel="stylesheet" href="style/sweetalert2/sweetalert2.min.css"/>
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12 text-center text-light">
+                <h1>Bienvenido a Farmacia "Medicamos tu vida S.A"</h1>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="opacity-75">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card rounded-5">
+                            <div class="card-body">
+                                <div class="bg-white">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="media/img/iconlogin.PNG" alt="login-icon" style="height: 7rem"/>
+                                    </div>
+                                    <div class="text-center fs-1 fw-bold">Login</div>
+                                    <div class="input-group mt-3">
+                                        <div class="input-group-text bg-info">
+                                            <img src="media/img/iconusuario.png" alt="username-icon" style="height: 1rem"/>
+                                        </div>
+                                        <input class="form-control" type="text" placeholder="Username"/>
+                                    </div>
+                                    <div class="input-group mt-2">
+                                        <div class="input-group-text bg-info">
+                                            <img src="media/img/bloquear (1).png" alt="password-icon" style="height: 1rem"/>
+                                        </div>
+                                        <input class="form-control" type="password" placeholder="Password"/>
+                                    </div>
+                                    <div class="btn btn-info text-white w-100 mt-3" onclick="login();">Login</div>
+                                    <div class="btn btn-info text-white w-100 mt-3" onclick="dirigirSICEFASucursal();">Ir a SICEFA sucursal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Valores</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-lg-start">
+                                    Honestidad
+                                    Sensibilidad
+                                    Humildad
+                                    Respeto
+                                    Responsabilidad
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Visi&oacute;n</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Con respecto a nuestros usuarios: facilitar un rápido acceso a los productos que precisen, 
+                                    primando los servicios profesionales, para que saquen el máximo beneficio a sus medicamentos.
+                                    Sobre nuestro equipo: responsabilizarse, respetar y cumplir el trabajo de forma individual, 
+                                    siendo conscientes de la importancia que tiene el trabajo de cada uno para conseguir un equipo eficaz 
+                                    y dinámico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h3>Misi&oacute;n</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Ofrecer una asistencia sanitaria de calidad, para alcanzar y mantener la salud, 
+                                    ofreciendo servicios farmacéuticos y productos, de forma profesional, servicial y cercana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Acerca de Nosotros:</h3>
+                            </div>
+                            <div class="card-body">
+                                <label class="form-label" for="txtMision">
+                                    Somos una farmacia comprometida con la salud y el bienestar de nuestra comunidad. Desde nuestra 
+                                    fundación, hemos sido una parte integral de la vida de nuestros clientes, brindando servicios
+                                    farmacéuticos de calidad y atención personalizada para satisfacer las necesidades de cada individuo.
+                                    Somos una farmacia a nivel estatal reconocida por los 50 a&ntilde;os de experiencia
+                                    que ofrecemos al p&uacute;blico y el amplio catalogo de productos que ofrecemos.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="style/sweetalert2/sweetalert2.all.min.js"></script>
+        <script src="js/sicefa_central_main.js"></script>
+    </body>
+</html>
